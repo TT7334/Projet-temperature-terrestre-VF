@@ -1,0 +1,33 @@
+├── app.py
+├── assets
+│   ├── dataviz.jpg
+│   ├── glacierfondu.jpg
+│   ├── logo_datascientest.png
+│   ├── methodologie.jpg
+│   ├── preprocessing.png
+│   ├── composant_prophet.png
+│   ├── courbe_prevision_co2.png
+│   ├── courbe_prevision_temp.png
+│   ├── terrebrule.jpg
+│   ├── image_conclusion.png
+├── data
+│   ├── anomalie_temperature_globale.csv
+│   ├── co2_global_non_nettoye.csv
+│   └── moyenne anomalie temperature par hemisphere.csv
+│   ├── co2_nettoyé.csv
+│   ├── co2_nettoyé_avant_gestion_NAN.csv
+│   └── co2_nettoyé_world_prophet.csv
+│   ├── predictions_co2.csv
+│   └── predictions_temperature.csv
+│   └── temperature_nettoyé_avant_gestion_NAN.csv
+├── README.md
+├── requirements.txt
+└── tabs
+    ├── introduction.py
+    ├── preprocessing.py
+    ├── datavisualisation.py
+    ├── methodologie.py
+    ├── demo.py
+    ├── conclusion.py
+
+	
