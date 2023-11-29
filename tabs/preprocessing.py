@@ -31,7 +31,7 @@ def prepro():
     st.markdown("En ce qui concerne les **valeurs manquantes (Nan)**, ce sont des mesures qui n’ont pas pu être prises lors de certaines années. Ceci s’expliquant par une antériorité trop importante ou une situation politique (guerre) trop tendu dans certains pays, empêchant la prise de mesure. Pour ce qui est de la partie datavisualisation, nous décidons de les laisser telles quelles car elles n’impactent pas notre visualisation.")
     st.write("En revanche, pour la **partie modélisation**, voici le traitement que nous avons choisi: (nous opérerons ces changements lors de la partie prédiction pour ne pas impacter nos visualisations)")
     st.write("- Premièrement, nous avons créé une **fonction qui a pour but de repérer les lignes composées d’au moins 60% de NaN.** Une fois repéré, la fonction va s’occuper de supprimer ces lignes. En effet, elles ne sont pas pertinentes pour notre modèle, n’apportent rien et risque de biaisé notre modèle.") 
-    st.write("- Comme nos deux dataset ne commencent pas les mêmes années, nous. avons décidé de les rendre **cohérents et de les faire démarrer à la même année, à savoir 1961.**")
+    st.write("- Comme nos deux dataset ne commencent pas par les mêmes années, nous avons décidé de les rendre **cohérents et de les faire démarrer à la même année, à savoir 1961.**")
     st.write("- Pour les valeurs manquantes restantes après ces deux étapes de nettoyage, nous avons fait le choix de les remplacer par leurs **KNN plus proches voisins**. C'est un algorithme qui va choisir les K plus proches voisins de la valeur manquante et en faire la moyenne. Nous pensons que c’est pertinent car les anomalies de températures d’une année à l’autre restent des anomalies. C’est-à-dire que la différence reste faible (cf distribution des années), entre -1 et 1. Il est donc pertinent d’appliquer cette méthode pour ne pas qu’il y ait trop de conséquences négatives sur notre modèle.")
     st.markdown('<hr style="border: none; border-top: 2px solid #D3D3D3; width: 50%;">', unsafe_allow_html=True)
     
@@ -44,7 +44,7 @@ def prepro():
     st.write("- **«co2»**: total des émissions de CO2") 
     st.write("- **«cement_co2»**: total CO2 émissions provenant du ciment")
     st.write("- **«coal_co2»**: total CO2 émissions provenant du charbon")
-    st.write("- **«flaring_co2»**: total CO2 émissions provenant du torchage (raffinerie")
+    st.write("- **«flaring_co2»**: total CO2 émissions provenant du torchage raffinerie")
     st.write("- **«gas_co2»**: Total Co2 émissions provenant du gaz")
     st.write("- **«oil_co2»**: CO2 émissions provenant du pétrole")
     st.write("- **«population»**: population de chaque pays")
