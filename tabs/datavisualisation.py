@@ -79,7 +79,7 @@ def dataviz():
     st.bokeh_chart(p)
     st.write("Grâce à ce graphique (construit à l’aide de la librairie Bokeh), nous avons croisé la variable année avec les mesures prises. Nous pouvons clairement constater une nette augmentation des anomalies de températures au fil des années.") 
     st.write("Cette tendance se confirme également pour les deux hémisphères de manière équivalente. En effet, les droites de régression, en pointillé, nous le montre.") 
-    st.write("Nous notons toutefois que c’est l’hémisphère Nord notre qui témoigne de l’augmentation la plus marquée, surtout ces dernières décennies.") 
+    st.write("Nous notons toutefois que c’est l’hémisphère Nord qui témoigne de l’augmentation la plus marquée, surtout ces dernières décennies.") 
     st.write("Entre les années 1880 et 1920, les anomalies de températures sont stables et restent même négatives. A partir de 1940, nous voyons que les anomalies se rapprochent de zéro. Et ce n’est qu’à partir de 1980 ou toutes les mesures d’anomalies sont positives, montrant donc un réchauffement des températures. Ceci s’explique par l’industrialisation et la mondialisation de notre monde pour répondre à une demande toujours plus croissante. Nous produisons plus, nous exportons plus et ainsi de suite…") 
     
     st.write("**Est-ce que cette augmentation des anomalies se vérifie en Europe et en France ?**")
@@ -151,7 +151,7 @@ def dataviz():
 
     st.write(fig)
 
-    st.write("Afin de venir renforcer davantage ce que l’on a vu grâce au graphique, il est intéressant de calculer des corrélations entre les différentes zones du monde. Pour cela, nous avons, grâce aux librairie pandas et matplotlib, de visualiser ces corrélations sous une carte de chaleur (heatmap):")
+    st.write("Afin de venir renforcer davantage ce que l’on a vu grâce au graphique, il est intéressant de calculer des corrélations entre les différentes zones du monde. Pour cela, nous avons, grâce aux librairie pandas et matplotlib, visualiser ces corrélations sous une carte de chaleur (heatmap):")
     df_numerical = data_temp_average.drop(columns=['24N-90N', '24S-24N', '90S-24S', '64N-90N', '44N-64N', '24N-44N', 'EQU-24N', '24S-EQU', '44S-24S', '64S-44S', '90S-64S'])
     corr = df_numerical.corr()
     fig, ax = plt.subplots(figsize=(4, 4))
