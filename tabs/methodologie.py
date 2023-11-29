@@ -32,11 +32,11 @@ def methodo():
     # La première étape est de faire des prédictions sur le CO2
     st.write("Voici donc la méthodologie que nous avons adoptée pour mener à bien notre projet:")
     texte = """
-    - Nous nous sommes donc d'abord, nous nous sommes penchés sur les changements de températures:
+    - Nous nous sommes d'abord penchés sur les changements de températures:
         - Nettoyage complet de la base de données avec nottament la gestion des valeurs manquantes et l'encodage des variables
         - Test de différents modèles pour ne garder que le plus performant.
     - Une fois chose faite, nous nous sommes penchés sur les émissions de CO2:
-        - Nettoyage complet de la base de données avec nottament la gestion des valeurs manquantes et l'encodage des variables
+        - Nettoyage complet de la base de données avec notamment la gestion des valeurs manquantes et l'encodage des variables
         - Test de différents modèles pour ne garder que le plus performant.
     """
     st.markdown(texte)
@@ -400,14 +400,14 @@ def methodo():
     """
     st.markdown(texte)
     st.markdown("<u>*A. La régréssion linéaire:*</u>", unsafe_allow_html=True)
-    st.write("Avant de commencer, nous réinitialisons l'index pour retrouver de la chrnologie. De plus, commé évoqué, nous devons encoder la variable 'country' puisque c'est un float. Nous utilisons pour ça la méthode du 'One Hot Encoder':")
+    st.write("Avant de commencer, nous réinitialisons l'index pour retrouver de la chronologie. De plus, comme évoqué, nous devons encoder la variable 'country' puisque c'est un float. Nous utilisons pour ça la méthode du 'One Hot Encoder':")
     df_co2= pd.read_csv('./data/co2_nettoyé.csv', sep=",")
     st.write(df_co2)
     #Je sépare mon jeu sous format 80/20 avec 80% pour l'entrainement et 20% pour le test.La découpe se fait non pas alétoirement mais par année :
     texte = """
     - Nous isolons notre variable cible "co2" du reste du dataset
     - Nous séparons notre jeu de données non pas de manière aléatoire mais en fonction des années pour respecter l'aspect chronologique de notre dataset. Les années de 1961 à 2008 (soit 80%) constituera notre jeu d'entrainement. Notre jeu de test (20%) ira de l'année 2009 à 2021
-    - Une fois le jeu séparé, il est mthodologiquement bon de standardiser certaines variables pour les mettre à l'échelle par rapport au reste. Nous décidons de standardiser la variable "population".
+    - Une fois le jeu séparé, il est méthodologiquement correcte de standardiser certaines variables pour les mettre à l'échelle par rapport au reste. Nous décidons de standardiser la variable "population".
     - Nous pouvons maintenant entrainer notre modèle sur les dataframe X_train et y_train
     """
     st.markdown(texte)
@@ -552,9 +552,9 @@ def methodo():
     # Creer DataFrame
     df_joined = pd.DataFrame(data, index = ['Random Forest','Decision Tree'])
     st.write(df_joined)
-    st.write("Nous constatons que les RMSE sont plus faibles, ce qui est un bon signe. TOut comme les coefficients de détermination qui se rapprochent davantage de 1. Bon signe également. ")
+    st.write("Nous constatons que les RMSE sont plus faibles, ce qui est un bon signe. Tout comme les coefficients de détermination qui se rapprochent davantage de 1. Bon signe également. ")
     st.write("Les deux derniers modèles sont donc plus précis et de meilleurs qualité que la régréssion. En l'état, le modèle le plus performant sur nos données est le random forest.")
-    st.write("Essayons tout de même d'appliquer le modèle prophet qui était le modèle le plus performant pour les température")
+    st.write("Essayons tout de même d'appliquer le modèle prophet qui était le modèle le plus performant pour les températures")
 
     st.markdown("<u>*C. Le modèle Prophet*</u>", unsafe_allow_html=True)
     st.write("Pour ce modèle, au même titre que le modèle SARIMAX, nous ne pouvons appliquer le modèle à l'ensemble du dataset, il faut pouvoir entrainer le modèle sur un pays/localisation. Par conséquent, nous choisissons la modalité 'World', pour rester cohérent." )
@@ -606,7 +606,7 @@ def methodo():
                     "<p><strong>R^2 (Coefficient of Determination)</strong></p>"
                     f"<p>{r2_train_world:.2f}</p>"
                     "</div>", unsafe_allow_html=True)
-    st.write("Cette fois encore, nous nous rendons compte que le modèle le plus performant pour prédire l'évolutions des émissions de CO2 est le **Prophet**")
+    st.write("Cette fois encore, nous nous rendons compte que le modèle le plus performant pour prédire l'évolution des émissions de CO2 est le **Prophet**")
     st.write("**En effet, la MSE, la RMSE et le coefficient de détermination sont meilleurs.**")
 
     st.write("Après ces nombreux tests, nous concluons donc que le modèle le plus performant est le Prophet, que ce soit pour les températures ou le CO2.")
