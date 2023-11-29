@@ -9,7 +9,7 @@ def demo():
     st.image("./assets/terrebrule.jpg", use_column_width=True)
     # Sous-titre "dataviz"
     st.markdown(f'<h2 style="text-align: center; text-decoration: underline;">Prédictions</h2>', unsafe_allow_html=True)
-    st.write("Maintenant que nous avons cerné le modèle le plus peroformant pour faire des prédictions, essayons de l'appliquer à nos données et comparons avec les études déjà présentes")
+    st.write("Maintenant que nous avons cerné le modèle le plus performant pour faire des prédictions, essayons de l'appliquer à nos données et comparons avec les études déjà présentes")
     st.markdown('<hr style="border: 2px solid #D3D3D3">', unsafe_allow_html=True)
     
     st.write("Tout d'abord, si nous regardons les graphiques de prévisions, ils n'évoluent pas de manière la plus positive. En effet, que ce soit pour les températures ou les emisisons de CO2, ils prévoient des augmentations dans les années à venir:")
@@ -61,7 +61,7 @@ def demo():
     with col2:
         st.metric(label="Prévision d'Émission (en millions de tonnes) de CO2 pour 2050", value=formatted_co2_2050)
 
-    st.write("Comme nous pouvons le constater, les prédictions ne sont pas **optimistes** puisque notre modèle prévoit pour 2050 une **différence de température de +1.82°** par rapport au référentiel et de **plus 61 millions de tonnes de CO2.**")
+    st.write("Comme nous pouvons le constater, les prédictions ne sont pas **optimistes** puisque notre modèle prévoit pour 2050 une **différence de température de +1.82°** par rapport au référentiel et de **plus 61.108 mégatonnes de tonnes de CO2.**")
     st.write("Entant donné la forte corrélation entre les températures et les emissions de CO2, nottament les emissions provenant de nos modes de consommation, **si celles-ci ne baissent pas dans le temps, nous risquons d'avoir des augmentations de températures constantes.**")
 
 
