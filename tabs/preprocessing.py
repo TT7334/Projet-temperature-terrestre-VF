@@ -36,7 +36,7 @@ def prepro():
     st.markdown('<hr style="border: none; border-top: 2px solid #D3D3D3; width: 50%;">', unsafe_allow_html=True)
     
     # Concernant le dataset sur le CO2
-    st.subheader("II. Dataset sur les emissions de CO2 et Gaz à effet de serre :")
+    st.subheader("II. Dataset sur les émissions de CO2 et Gaz à effet de serre :")
     data_co2 = pd.read_csv("./data/co2_global_non_nettoye.csv", sep=",", encoding='cp1252')
     st.write(data_co2)
     st.write("Tout d’abord, comme nous l’avons constaté précédemment, ce dataset possède énormément de colonnes. Trop de colonnes. Toutes ne sont pas utiles pour notre datavisualisation ou notre modèle prédictif.")
