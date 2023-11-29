@@ -11,13 +11,13 @@ def conclusion():
     
     st.write("Grâce à l'analyse statistique des données, nous avons pu répondre aux problématiques posées en début de projet :")
     texte = """
-    - Nous avons pu constaté le réchauffement climatique : **c'est une réalité indiscutable**. Cela augmente depuis la révolution industrielle de 1880, et s'accélère à partir de 1975, de manière plus forte encore dans l'hémisphère nord, la ou l'industrialisation est la plus intensive.
+    - Nous avons pu constater le réchauffement climatique : **c'est une réalité indiscutable**. Cela augmente depuis la révolution industrielle de 1880, et s'accélère à partir de 1975, de manière plus forte encore dans l'hémisphère nord, là où l'industrialisation est la plus intensive.
     - Les émissions de CO2 ont **une forte influence** sur la hausse des températures. Elles sont étroitement liées.
-    - **Nos prédictions ne sont pas optimistes**. D'après notre modèle Prophet, la température moyenne globale augmentera de près de 2°C dans les 50 prochaines années, causées par une augmentation constantes des emissions de CO2. Ces résultats rejoignent ceux de la majorité des études disponibles sur le changemen climatique.
+    - **Nos prédictions ne sont pas optimistes**. D'après notre modèle Prophet, la température moyenne globale augmentera de près de 2°C dans les 50 prochaines années, causées par une augmentation constante des émissions de CO2. Ces résultats rejoignent ceux de la majorité des études disponibles sur le changement climatique.
     """
     st.markdown(texte)
 
 
     st.header("Sujets d'ouverture:")
-    st.write("En guise d'ouverture, il serait intéressant de regarder **comment évoluent les différences de températures** en prévoyant des **diminutions drastiques des emissions de CO2.**")
+    st.write("En guise d'ouverture, il serait intéressant de regarder **comment évoluent les différences de températures** en prévoyant des **diminutions drastiques des émissions de CO2.**")
     st.write("Le comportement des **températures sera probablement différent** et permettra de donner à l'humanité des **objectifs d'emissions** pour vivre de manière pérenne sur notre planète.")
