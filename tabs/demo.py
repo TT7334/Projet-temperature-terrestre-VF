@@ -61,9 +61,13 @@ def demo():
     with col2:
         st.metric(label="Prévision d'Émission (en millions de tonnes) de CO2 pour 2050", value=formatted_co2_2050)
 
-    st.write("Comme nous pouvons le constater, les prédictions ne sont pas **optimistes** puisque notre modèle prévoit pour 2050 une **différence de température de +1.82°** par rapport au référentiel et de **plus 61.108 mégatonnes de tonnes de CO2.**")
+    st.write("Comme nous pouvons le constater, les prédictions ne sont pas **optimistes** puisque notre modèle prévoit pour 2050 une **différence de température de +1.82°** par rapport au référentiel et de **plus 61.108 gigatonnes de tonnes de CO2.**")
     st.write("Entant donné la forte corrélation entre les températures et les emissions de CO2, nottament les emissions provenant de nos modes de consommation, **si celles-ci ne baissent pas dans le temps, nous risquons d'avoir des augmentations de températures constantes.**")
 
 
-    st.write("Reste plus qu'à comparer avec le GIEC. ")
-
+    st.write("Toutefois, nos prédictions par rapport au GIEC sont plus optimistes comme nous le revèle ce tableau ci-dessous:")
+    st.image("./assets/previsions GIEC 2050.png", use_column_width=True)
+    st.write("Les lignes correpondent aux différents scénarios établis par le GIEC en matière d'émissions de Gaz à effet de serre.")
+    st.write("La ligne qui nous intéresse est l'intermédiaire car ce scénario part du principe que nous gardons nos modes de consommations actuels, sans rien changer")
+    st.write("On peut voir que sur la période 2041 - 2060, **leur prévision est de +2°**, ce qui est plus **pessimiste** que notre modèle, mais reste tout de même cohérent.")
+    st.write("Ceci s'explique par le fait que Le Giec prend en compte toutes les émissions de gaz à effet de serre et pas seulement le CO2. Les variables exogènes doivent être aussi mieux prises en compte.")
