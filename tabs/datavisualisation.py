@@ -227,7 +227,6 @@ def dataviz():
     st.markdown('<hr style="border: none; border-top: 2px solid #D3D3D3; width: 50%;">', unsafe_allow_html=True)
     st.write("**Maintenant que nous avons constaté que les emissions de CO2 augmentaient au fil du temps tout comme les anomalies de températures, est-ce qu’il y a une corrélation entre ces deux phénomènes ?**")
     st.write("Pour répondre à cette question, nous avons donc mergé nos deux dataset afin de rassembler nos données et nous avons créé ce graphique (à l’aide de Bokeh)")
-    st.write("On peut constater clairement qu’il y a un lien entre augmentation des températures et émissions de CO2 sur la planète. La forte hausse commence aussi à la même période. D’ailleurs, on remarque ici que les changements de températures semblent plus corrélés aux émissions provenant du secteur industriel et des énergies fossiles qu’il utilise.")
     window_size = 5
     common_years = set(data_co2['year']).intersection(set(data_temp_average['Year']))
     df_co2_global_common_years = data_co2[data_co2['year'].isin(common_years)]
