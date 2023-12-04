@@ -12,7 +12,6 @@ def conclusion():
     st.write("Grâce à l'analyse statistique des données, nous avons pu répondre aux problématiques posées en début de projet :")
     texte = """
     - Nous avons pu constater le réchauffement climatique : **c'est une réalité indiscutable**. Cela augmente depuis la révolution industrielle de 1880, et s'accélère à partir de 1975, de manière plus forte encore dans l'hémisphère nord, là où l'industrialisation est la plus intensive.
-    - Les émissions de CO2 ont **une forte influence** sur la hausse des températures. Elles sont étroitement liées.
     - **Nos prédictions ne sont pas optimistes**. D'après notre modèle Prophet, la température moyenne globale augmentera de près de 2°C dans les 50 prochaines années, causées par une augmentation constante des émissions de CO2 et de toutes les autres émissions de gaz à effet de serre qui ont un lien de corrélation avec ces changements de températures. Ces résultats rejoignent ceux de la majorité des études disponibles sur le changement climatique.
     """
     st.markdown(texte)
