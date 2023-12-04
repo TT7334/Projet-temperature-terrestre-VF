@@ -61,7 +61,7 @@ def demo():
     with col2:
         st.metric(label="Prévision d'Émission (en millions de tonnes) de CO2 pour 2050", value=formatted_co2_2050)
 
-    st.write("Comme nous pouvons le constater, les prédictions ne sont pas **optimistes** puisque notre modèle prévoit pour 2050 une **différence de température de +1.82°** par rapport au référentiel et de **plus 61.108 gigatonnes de tonnes de CO2.**")
+    st.write("Comme nous pouvons le constater, les prédictions ne sont pas **optimistes** puisque notre modèle prévoit pour 2050 une **différence de température de +1.82°** par rapport au référentiel et de **plus 61.108 megatonnes de tonnes de CO2.**")
     st.write("Entant donné la forte corrélation entre les températures et les emissions de CO2, nottament les emissions provenant de nos modes de consommation, **si celles-ci ne baissent pas dans le temps, nous risquons d'avoir des augmentations de températures constantes.**")
 
     st.write("Pour s'assurer de la cohérences de notre modèle, nous avons comparés nos résultats avec les données du GIEC, experts reconnus sur la question.")
