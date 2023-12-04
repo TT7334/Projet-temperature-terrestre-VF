@@ -67,6 +67,7 @@ def demo():
     st.write("Pour s'assurer de la cohérences de notre modèle, nous avons comparés nos résultats avec les données du GIEC, experts reconnus sur la question.")
     st.write("Nos prédictions par rapport au GIEC sont plus optimistes comme nous le revèle ce tableau ci-dessous:")
     st.image("./assets/previsions GIEC 2050.png", use_column_width=True)
+    st.write("source: https://reseauactionclimat.org/rapport-giec-climat-2021")
     st.write("Les lignes correpondent aux différents scénarios établis par le GIEC en matière d'émissions de Gaz à effet de serre.")
     st.write("La ligne qui nous intéresse est l'intermédiaire car ce scénario part du principe que nous gardons nos modes de consommations actuels, sans rien changer")
     st.write("On peut voir que sur la période 2041 - 2060, **leur prévision est de +2°**, ce qui est plus **pessimiste** que notre modèle, mais reste tout de même cohérent.")
